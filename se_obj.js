@@ -10,9 +10,9 @@ const usuario2 = {
     isAdmin: false
 };
 
-if (usuario.isAdmin) {
-    console.log(`${usuario.nome} tem permissões de administrador.`);
+if (usuario2.isAdmin) {
+    console.log(`${usuario2.nome} tem permissões de administrador.`);
 } else {
-    console.log(`${usuario.nome} não é um administrador.`);
+    console.log(`${usuario2.nome} não é um administrador.`);
 }
 
