@@ -9,4 +9,8 @@ const objPersonagem = {
     status: "desaparecido"
 }
 
-console.log(objPersonagem)
+console.log("Obj 'original': ",objPersonagem)
+
+delete objPersonagem.status  // inclusive, isso retorna um "true"
+
+console.log(`Pós remoção dos 'status': `, objPersonagem)
