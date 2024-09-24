@@ -74,4 +74,6 @@ console.log(mostrarDetalhes);
 
 console.log("----------Excluindo Avalição do Livro 2-----------")
 
+delete livro2.avaliacao;
 
+console.log(livro2);
