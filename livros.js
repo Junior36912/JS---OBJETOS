@@ -72,6 +72,6 @@ livro.genero = "Aventura Introexpectiva";
 
 console.log(mostrarDetalhes);
 
-console.log("-------------------------------------------------")
+console.log("----------Excluindo Avalição do Livro 2-----------")
 
 
