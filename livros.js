@@ -21,11 +21,11 @@ Avaliação: ${livro.avaliacao} estrelas
 
 `;
 
-console.log("----------------------------------------------")
+console.log("------------------Livro 1-------------------")
 
 console.log(mostrarDetalhes);
 
-console.log("----------------------------------------------")
+console.log("------------------Livro 2---------------------")
 
 const livro2 = {
     titulo: "Os sete maridos de Evelyn Hugo",
@@ -43,21 +43,35 @@ console.log(`Gênero: ${livro2["genero"]}`);
 console.log(`Idade de Publicação: ${livro2["idadePublicacao"]} anos`);
 console.log(`Avaliação: ${livro['avaliacao']} estrelas`)
   
-console.log("----------------------------------------------")
+console.log("-------------Livro com Avaliação------------------")
 
-// Atribuir avaliação se for null - Livro 1
+
+// Atribuir avaliação se for null
 if (livro.avaliacao === null) {
-    livro.avaliacao = 4.5; // Exemplo de nota de avaliação
+    livro.avaliacao = 4.5; 
+    console.log("Avaliação adicionada: ", livro.avaliacao);
   } else {
     console.log("O livro já possui uma avaliação.");
-  }
+}
   
 console.log(livro);
 
 // Atribuir avaliação se for null - Livro 2
 if (livro2.avaliacao === null) {
-    livro2.avaliacao = 4.5; // Exemplo de nota de avaliação
+    livro2.avaliacao = 4.5; 
+    console.log("Avaliação adicionada: ", livro.avaliacao);
   } else {
     console.log("O livro já possui uma avaliação.");
   }
 console.log(livro2);
+
+
+console.log("------------------Mudando Genero------------------")
+
+livro.genero = "Aventura Introexpectiva";
+
+console.log(mostrarDetalhes);
+
+console.log("-------------------------------------------------")
+
+
