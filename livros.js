@@ -3,7 +3,8 @@ const livro = {
     titulo: "A Biblioteca da meia noite",
     autor: "Matt Haig",
     anoPublicacao: 2021,
-    genero: "Distopia"
+    genero: "Distopia",
+    avaliacao: null
 };
 
 anoAtual = 2024
@@ -15,7 +16,9 @@ Título: ${livro.titulo},
 Autor: ${livro.autor}, 
 Ano de Publicação: ${livro.anoPublicacao}, 
 Gênero: ${livro.genero}, 
-Idade da Publicação: ${livro.idadePublicacao} anos.
+Idade da Publicação: ${livro.idadePublicacao} anos,
+Avaliação: ${livro.avaliacao} estrelas
+
 `;
 
 console.log("----------------------------------------------")
@@ -29,7 +32,8 @@ const livro2 = {
     autor: "TAYLOR JENKINS REID",
     anoPublicacao: 2019,
     genero: "Romance",
-    idadePublicacao: new Date().getFullYear() - 2019
+    idadePublicacao: new Date().getFullYear() - 2019,
+    avaliacao: null
 };
 
 console.log(`Título: ${livro2["titulo"]}`);
@@ -37,6 +41,23 @@ console.log(`Autor: ${livro2["autor"]}`);
 console.log(`Ano de Publicação: ${livro2["anoPublicacao"]}`);
 console.log(`Gênero: ${livro2["genero"]}`);
 console.log(`Idade de Publicação: ${livro2["idadePublicacao"]} anos`);
+console.log(`Avaliação: ${livro['avaliacao']} estrelas`)
   
 console.log("----------------------------------------------")
 
+// Atribuir avaliação se for null - Livro 1
+if (livro.avaliacao === null) {
+    livro.avaliacao = 4.5; // Exemplo de nota de avaliação
+  } else {
+    console.log("O livro já possui uma avaliação.");
+  }
+  
+console.log(livro);
+
+// Atribuir avaliação se for null - Livro 2
+if (livro2.avaliacao === null) {
+    livro2.avaliacao = 4.5; // Exemplo de nota de avaliação
+  } else {
+    console.log("O livro já possui uma avaliação.");
+  }
+console.log(livro2);
