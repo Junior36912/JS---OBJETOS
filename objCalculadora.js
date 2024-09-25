@@ -46,3 +46,6 @@ console.log("Divisão:", Calculadora.Divisao(3, 1));
 const l1 = [10, 9, 8, 7];
 
 console.log(Calculadora.Media(l1))
+
+const l2 = [];
+console.log("Média (lista vazia):", Calculadora.Media(l2));
