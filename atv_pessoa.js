@@ -15,8 +15,8 @@
 const objPessoas = {
     nome: "Junior Jackson",
     notas: [
-        7.5, 
-        6, 
+        7.5,
+        6,
         8
     ],
     somaNotas: 0,
