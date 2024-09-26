@@ -13,10 +13,79 @@
 //
 //Chame os métodos ligar e desligar do objeto carro e imprima no console as mensagens resultantes.
 //Chame o método obterDetalhes e imprima no console a string retornada.
+
+
+const objCarro1 = {
+    marca: "Citron",
+    modelo: "B2",
+    ano: 2024,
+    cor: "Rosa Barbie",
+    motorEstaLigado: true,
+    ligarMoto: function(){
+        if(this.motorEstaLigado == true){
+            console.log("Motor já está ligado!");
+            return true
+        }else{
+            this.motorEstaLigado = true;
+            console.log("Ligando motor!");
+            return true
+        }
+    },
+    desligarMotor: function(){
+        if(this.motorEstaLigado == false){
+            console.log("Motor já está desligado!");
+            return false
+        }else{
+            this.motorEstaLigado = false;
+            console.log("Desligando o motor!");
+            return false
+        }
+    }
+}
+
+console.log(objCarro1.ligarMoto())
+
+console.log(objCarro1.desligarMotor())
+
+
+obterDetalhes = function(objCarro){
+
+    const valoresObj = Object.entries(objCarro)
+
+    for(const [elemento] of Object.entries(valoresObj)){
+        console.log(`${valoresObj[elemento][0]} : ${valoresObj[elemento][1]}`)
+        
+    }
+}
+
+console.log("----------------------------INFO CARRO ANTES DA PLACA----------------------------")
+
+obterDetalhes(objCarro1)
+
+
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 //4 - No objeto carro, adicione uma nova propriedade chamada placa representando a placa do veículo. Defina a propriedade placa como não enumerável, 
 //para que ela não seja listada ao percorrer as propriedades do objeto.
-//
+
+objCarro1.placa = "MCU048";
+Object.defineProperty(objCarro1, "placa", {
+    enumerable: false
+})
+
+console.log("----------------------------INFO CARRO DEPOIS DA PLACA----------------------------")
+
+obterDetalhes(objCarro1)
+
+console.log("-------------------------------ACESSAR KEYS DO CARRO-------------------------------")
+
+console.log(Object.keys(objCarro1))
+
+console.log("-------------------------------ACESSAR VALUES DO CARRO-------------------------------")
+
+console.log(Object.values(objCarro1))
+
+
+
 //Utilize um loop for...in para percorrer as propriedades do objeto carro e imprima no console apenas as propriedades enumeráveis.
 //
 //Utilize o método Object.keys() para obter um array contendo apenas as chaves enumeráveis do objeto carro e imprima no console esse array.
