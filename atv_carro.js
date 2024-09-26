@@ -27,7 +27,6 @@ infoCarro = function(objCarro){
     for (const [key] of Object.entries(valoresObj)){
         console.log(`${valoresObj[key][0]} : ${valoresObj[key][1]}`)
     };
-
 }
 
 console.log("-----------------------ORIGINAL InfoCarro------------------------")
