@@ -71,3 +71,17 @@ Object.entries(valoresEChavesObjeto).forEach(([key]) => {
     console.log(`${valoresEChavesObjeto[key][0]} : ${valoresEChavesObjeto[key][1]}`); 
 });
 
+
+console.log("-------------------------FUSÃO DE OBJETOS----------------------------")
+
+const objetoOriginal = { a: 1, b: 2 };
+const objetoParaFundir = { b: 3, c: 4 };
+
+const objetoFusionado = Object.assign({}, objetoOriginal, objetoParaFundir);
+
+console.log("Objeto original:", objetoOriginal);
+
+console.log("Objeto para fundir:", objetoParaFundir);
+
+console.log("Objeto fundido: ", objetoFusionado);
+// Saída: { a: 1, b: 3, c: 4 }
