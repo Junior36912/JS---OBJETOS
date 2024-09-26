@@ -45,6 +45,14 @@ const objPessoas = {
         }
     }
 }
+
+console.log("-------------------MÉDIAS GERADAS PELA FUNÇÃO OBJ---------------------")
+
 console.log(objPessoas.calcularMediaNotas())
+
+console.log("-----------------------MÉDIAS GERADAS PELO OBJ------------------------")
+
 console.log(objPessoas.mediaOfc)
+
+console.log("----------------DESEMPENHO GERADAS PELA FUNÇÃO OBJ--------------------")
 objPessoas.classificarDesempenho()
