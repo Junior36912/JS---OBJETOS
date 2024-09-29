@@ -132,3 +132,4 @@ console.log(carroNovo_2)
 
 console.log("-------------------------------INFO CARRO NOVO 1.0 - DEPOIS DA ADIÇÃO DE INFO------------------------------")
 console.log(carroNovo)
+
